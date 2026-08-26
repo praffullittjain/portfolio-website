@@ -14,7 +14,7 @@ export default function Hero() {
         Praffullitt Jain
       </h1>
       <p className="mt-5 text-lg sm:text-xl text-gray-600 max-w-2xl">
-        Engineer turned Product Owner.
+        Engineer turned Product Owner
       </p>
 
       <span className="mt-5 inline-block rounded-full bg-terracotta/10 text-terracotta-dark border border-terracotta/20 px-3.5 py-1 text-xs font-medium">
