@@ -3,14 +3,20 @@ const SKILLS = [
   "Node.js",
   "PostgreSQL",
   "Python",
+  "Java",
+  "JavaScript",
+  "REST APIs",
   "Claude Code",
   "Cursor",
+  "Prompt Engineering",
   "Product Strategy",
   "User Research",
-  "SQL",
   "Sprint Planning",
-  "REST APIs",
+  "Stakeholder Management",
+  "Backlog Management",
+  "SQL",
   "A/B Testing",
+  "Google Analytics",
 ];
 
 export default function About() {
@@ -48,7 +54,7 @@ export default function About() {
             {SKILLS.map((skill) => (
               <div
                 key={skill}
-                className="bg-white rounded-lg shadow-sm px-4 py-3 text-center text-sm font-medium text-gray-700 border border-gray-100"
+                className="flex items-center justify-center text-center bg-white rounded-lg shadow-sm px-4 py-3 min-h-[3.25rem] text-sm font-medium text-gray-700 border border-gray-100"
               >
                 {skill}
               </div>
