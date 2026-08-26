@@ -1,3 +1,5 @@
+import headshot from "../assets/praffullitt-headshot.jpg";
+
 const STATS = [
   "4 years at Oracle",
   "Imperial MBA 2026",
@@ -10,7 +12,13 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16"
     >
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
+      <img
+        src={headshot}
+        alt="Praffullitt Jain"
+        className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover shadow-md border-4 border-white ring-1 ring-gray-100"
+      />
+
+      <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
         Praffullitt Jain
       </h1>
       <p className="mt-5 text-lg sm:text-xl text-gray-600 max-w-2xl">
