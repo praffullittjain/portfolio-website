@@ -3,8 +3,12 @@ const EXPERIENCE = [
     org: "Imperial College Business School",
     role: "Full-time MBA",
     dates: "September 2025 to September 2026",
+    highlight: {
+      tag: "Live consulting engagement",
+      title: "GTM consulting for a European green-tech scale-up",
+      detail: "Country prioritisation framework, EEA WISE database analysis.",
+    },
     bullets: [
-      "GTM consulting for a European green-tech scale-up: country prioritisation framework, EEA WISE database analysis.",
       "President, LGBTQ+ and Allies Careers Club: corporate partnerships, speaker panels, mentoring programmes.",
       "Panelist at Capco Trans Visibility event on lived experiences and inclusive workplace design.",
     ],
@@ -55,6 +59,20 @@ export default function Experience() {
                   {entry.role}
                 </h3>
                 <p className="text-sm text-gray-500 mb-4">{entry.org}</p>
+
+                {entry.highlight && (
+                  <div className="mb-4 rounded-lg border-l-4 border-sage bg-sage/10 px-4 py-3">
+                    <span className="inline-block text-xs font-semibold uppercase tracking-wide text-sage-dark mb-1">
+                      {entry.highlight.tag}
+                    </span>
+                    <p className="text-sm font-semibold text-gray-900">
+                      {entry.highlight.title}
+                    </p>
+                    <p className="text-sm text-gray-600 mt-0.5">
+                      {entry.highlight.detail}
+                    </p>
+                  </div>
+                )}
 
                 <ul className="flex flex-col gap-2">
                   {entry.bullets.map((bullet) => (
