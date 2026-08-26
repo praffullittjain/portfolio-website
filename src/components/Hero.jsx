@@ -6,11 +6,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[85vh] flex items-center px-6 pt-24 pb-16"
+      className="min-h-screen flex items-center px-6 pt-16"
     >
-      <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full">
+      <div className="max-w-4xl mx-auto grid md:grid-cols-[3fr_2fr] gap-10 items-center w-full">
         <div className="text-center md:text-left order-2 md:order-1">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
+          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 whitespace-nowrap">
             Praffullitt Jain
           </h1>
           <p className="mt-5 text-lg sm:text-xl text-gray-600">
