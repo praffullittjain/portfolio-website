@@ -6,9 +6,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center px-6 pt-16"
+      className="min-h-[85vh] flex items-center px-6 pt-24 pb-16"
     >
-      <div className="max-w-5xl mx-auto grid md:grid-cols-[1fr_auto] gap-12 items-center w-full">
+      <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-10 items-center w-full">
         <div className="text-center md:text-left order-2 md:order-1">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
             Praffullitt Jain
