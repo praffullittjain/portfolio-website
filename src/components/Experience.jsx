@@ -40,7 +40,7 @@ const EXPERIENCE = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-offwhite py-24 px-6">
+    <section id="experience" className="bg-white py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-12">Experience</h2>
 
@@ -50,7 +50,7 @@ export default function Experience() {
           <div className="flex flex-col gap-12">
             {EXPERIENCE.map((entry) => (
               <div key={`${entry.org}-${entry.role}`} className="relative">
-                <div className="absolute -left-8 sm:-left-10 top-1.5 w-3 h-3 rounded-full bg-sage ring-4 ring-offwhite" />
+                <div className="absolute -left-8 sm:-left-10 top-1.5 w-3 h-3 rounded-full bg-sage ring-4 ring-white" />
 
                 <p className="text-sm font-medium text-sage-dark">
                   {entry.dates}

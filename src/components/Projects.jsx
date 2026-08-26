@@ -1,19 +1,29 @@
+import { Link } from "react-router-dom";
+
 const PROJECTS = [
   {
     title: "Ditch the Label: Digital Safety Platform",
     tags: ["React", "Node.js", "PostgreSQL", "Claude Code"],
     description:
       "A safeguarding-compliant gamified learning platform for young people aged 11 to 18, covering online safety, bullying, and digital extortion. Built from scratch as sole Product Manager and Full-Stack Engineer for a UK youth charity. Students earn badges and progress toward becoming Champions.",
-    link: "https://dtl-safety-quiz.netlify.app/",
-    linkLabel: "View live",
+    liveLink: "https://dtl-safety-quiz.netlify.app/",
+    caseStudyLink: "/case-study/dtl",
   },
   {
     title: "Therapy Practice Platform",
     tags: ["React", "Node.js", "Claude Code", "Cursor"],
     description:
       "An end-to-end booking and practice management platform for a therapy practice. Patient-facing web app for discovery and booking, plus a companion mobile app for the therapist to manage bookings in real time. Owned the full product lifecycle from discovery through to deployment.",
-    link: null,
-    linkLabel: null,
+    liveLink: null,
+    caseStudyLink: null,
+  },
+  {
+    title: "GTM Strategy: Puraffinity",
+    tags: ["Market Research", "EEA WISE Database", "Country Prioritisation"],
+    description:
+      "Live consulting engagement developing market entry strategy for a European green-tech scale-up. Built a country prioritisation framework with scoring variables and queried EEA WISE and national databases to validate assumptions with primary data.",
+    liveLink: null,
+    caseStudyLink: null,
   },
 ];
 
@@ -23,7 +33,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-10">Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project) => (
             <div
               key={project.title}
@@ -48,15 +58,27 @@ export default function Projects() {
                 {project.description}
               </p>
 
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex self-start items-center rounded-lg bg-sage px-5 py-2.5 text-sm font-semibold text-white hover:bg-sage-dark transition-colors"
-                >
-                  {project.linkLabel}
-                </a>
+              {(project.liveLink || project.caseStudyLink) && (
+                <div className="mt-6 flex flex-wrap gap-3">
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center rounded-lg bg-sage px-5 py-2.5 text-sm font-semibold text-white hover:bg-sage-dark transition-colors"
+                    >
+                      View live
+                    </a>
+                  )}
+                  {project.caseStudyLink && (
+                    <Link
+                      to={project.caseStudyLink}
+                      className="inline-flex items-center rounded-lg border border-sage px-5 py-2.5 text-sm font-semibold text-sage hover:bg-sage hover:text-white transition-colors"
+                    >
+                      Read case study
+                    </Link>
+                  )}
+                </div>
               )}
             </div>
           ))}

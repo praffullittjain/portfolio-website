@@ -39,7 +39,7 @@ const SKILL_CATEGORIES = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white py-24 px-6">
+    <section id="skills" className="bg-offwhite py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-10">Skills</h2>
 
@@ -47,7 +47,7 @@ export default function Skills() {
           {SKILL_CATEGORIES.map((category) => (
             <div
               key={category.title}
-              className="rounded-xl border border-gray-100 shadow-sm overflow-hidden"
+              className="rounded-xl bg-white border border-gray-100 shadow-sm overflow-hidden"
             >
               <div className="bg-sage/10 border-b border-sage/20 px-6 py-4">
                 <h3 className="font-semibold text-sage-dark">

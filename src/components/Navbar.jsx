@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -15,19 +18,31 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#hero" className="font-semibold text-sage tracking-tight">
+        <Link to="/" className="font-semibold text-sage tracking-tight">
           Engineer | Product Owner
-        </a>
+        </Link>
 
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
-          {NAV_LINKS.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} className="hover:text-sage transition-colors">
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-8">
+          <ul className="flex items-center gap-8 text-sm font-medium text-gray-700">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  to={link.href}
+                  className="hover:text-sage transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="/Praffullitt-Jain-Resume.pdf"
+            download="Praffullitt-Jain-Resume.pdf"
+            className="rounded-lg bg-sage px-4 py-2 text-sm font-semibold text-white hover:bg-sage-dark transition-colors"
+          >
+            Download CV
+          </a>
+        </div>
 
         <button
           type="button"
@@ -58,15 +73,25 @@ export default function Navbar() {
         <ul className="md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-gray-700 bg-white border-t border-gray-100">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 onClick={handleLinkClick}
                 className="block py-2.5 hover:text-sage transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
+          <li>
+            <a
+              href="/Praffullitt-Jain-Resume.pdf"
+              download="Praffullitt-Jain-Resume.pdf"
+              onClick={handleLinkClick}
+              className="block py-2.5 font-semibold text-sage-dark"
+            >
+              Download CV
+            </a>
+          </li>
         </ul>
       )}
     </header>
