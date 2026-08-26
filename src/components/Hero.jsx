@@ -14,7 +14,7 @@ export default function Hero() {
         Praffullitt Jain
       </h1>
       <p className="mt-5 text-lg sm:text-xl text-gray-600 max-w-2xl">
-        Engineer turned Product Owner. Building with Claude Code and Cursor.
+        Engineer turned Product Owner.
       </p>
 
       <span className="mt-5 inline-block rounded-full bg-sage/5 text-sage-dark/80 border border-sage/10 px-3.5 py-1 text-xs font-medium">
