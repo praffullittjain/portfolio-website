@@ -12,6 +12,16 @@ const EXPERIENCE = [
     ],
   },
   {
+    org: "Imperial College Business School",
+    role: "Full-time MBA",
+    dates: "September 2025 to September 2026",
+    bullets: [
+      "GTM consulting for a European green-tech scale-up: country prioritisation framework, EEA WISE database analysis.",
+      "President, LGBTQ+ and Allies Careers Club: corporate partnerships, speaker panels, mentoring programmes.",
+      "Panelist at Capco Trans Visibility event on lived experiences and inclusive workplace design.",
+    ],
+  },
+  {
     org: "Oracle",
     role: "Application Engineer",
     dates: "July 2021 to March 2024",
@@ -20,16 +30,6 @@ const EXPERIENCE = [
       "Resolved 200+ bugs across the full stack, identifying systemic patterns and implementing platform-wide fixes.",
       "Designed and built REST APIs automating task assignment across employee lifecycle events.",
       "Diagnosed and resolved recurring HR data upload failures, reducing error rates and accelerating go-lives.",
-    ],
-  },
-  {
-    org: "Imperial College Business School",
-    role: "Full-time MBA",
-    dates: "September 2025 to September 2026",
-    bullets: [
-      "GTM consulting for a European green-tech scale-up: country prioritisation framework, EEA WISE database analysis.",
-      "President, LGBTQ+ and Allies Careers Club: corporate partnerships, speaker panels, mentoring programmes.",
-      "Panelist at Capco Trans Visibility event on lived experiences and inclusive workplace design.",
     ],
   },
 ];
