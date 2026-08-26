@@ -8,7 +8,7 @@ export default function Footer() {
           Always happy to chat. Please feel free to{" "}
           <a
             href="mailto:praffullitt.jain@gmail.com"
-            className="text-sage-dark font-medium hover:underline"
+            className="text-terracotta-dark font-medium hover:underline"
           >
             get in touch
           </a>

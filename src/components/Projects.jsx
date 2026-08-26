@@ -73,7 +73,7 @@ export default function Projects() {
                   {project.caseStudyLink && (
                     <Link
                       to={project.caseStudyLink}
-                      className="inline-flex items-center rounded-lg border border-sage px-5 py-2.5 text-sm font-semibold text-sage hover:bg-sage hover:text-white transition-colors"
+                      className="inline-flex items-center rounded-lg border border-terracotta px-5 py-2.5 text-sm font-semibold text-terracotta-dark hover:bg-terracotta hover:text-white transition-colors"
                     >
                       Read case study
                     </Link>

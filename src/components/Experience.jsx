@@ -61,8 +61,8 @@ export default function Experience() {
                 <p className="text-sm text-gray-500 mb-4">{entry.org}</p>
 
                 {entry.highlight && (
-                  <div className="mb-4 rounded-lg border-l-4 border-sage bg-sage/10 px-4 py-3">
-                    <span className="inline-block text-xs font-semibold uppercase tracking-wide text-sage-dark mb-1">
+                  <div className="mb-4 rounded-lg border-l-4 border-terracotta bg-terracotta/10 px-4 py-3">
+                    <span className="inline-block text-xs font-semibold uppercase tracking-wide text-terracotta-dark mb-1">
                       {entry.highlight.tag}
                     </span>
                     <p className="text-sm font-semibold text-gray-900">

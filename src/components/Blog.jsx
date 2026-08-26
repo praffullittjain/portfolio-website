@@ -41,7 +41,7 @@ export default function Blog() {
               </p>
               <Link
                 to={post.href}
-                className="mt-6 inline-flex self-start items-center text-sm font-semibold text-sage-dark hover:text-sage transition-colors"
+                className="mt-6 inline-flex self-start items-center text-sm font-semibold text-terracotta-dark hover:text-terracotta transition-colors"
               >
                 Read more &rarr;
               </Link>

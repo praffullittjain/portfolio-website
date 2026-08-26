@@ -17,7 +17,7 @@ export default function Hero() {
         Engineer turned Product Owner.
       </p>
 
-      <span className="mt-5 inline-block rounded-full bg-sage/5 text-sage-dark/80 border border-sage/10 px-3.5 py-1 text-xs font-medium">
+      <span className="mt-5 inline-block rounded-full bg-terracotta/10 text-terracotta-dark border border-terracotta/20 px-3.5 py-1 text-xs font-medium">
         Open to roles in London
       </span>
 

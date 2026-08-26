@@ -9,6 +9,11 @@ export default {
           light: "#7A9A7A",
           dark: "#465D46",
         },
+        terracotta: {
+          DEFAULT: "#D97757",
+          light: "#E8956F",
+          dark: "#B85C3F",
+        },
         offwhite: "#F8F8F5",
       },
       fontFamily: {
