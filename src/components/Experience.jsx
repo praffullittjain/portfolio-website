@@ -1,5 +1,15 @@
 const EXPERIENCE = [
   {
+    org: "Imperial College Business School",
+    role: "Full-time MBA",
+    dates: "September 2025 to September 2026",
+    bullets: [
+      "GTM consulting for a European green-tech scale-up: country prioritisation framework, EEA WISE database analysis.",
+      "President, LGBTQ+ and Allies Careers Club: corporate partnerships, speaker panels, mentoring programmes.",
+      "Panelist at Capco Trans Visibility event on lived experiences and inclusive workplace design.",
+    ],
+  },
+  {
     org: "Oracle",
     role: "Senior Application Engineer",
     dates: "April 2024 to August 2025",
@@ -9,16 +19,6 @@ const EXPERIENCE = [
       "Reduced server load and latency by 17% via UI migration from Oracle ADF to VBCS.",
       "Scaled AI adoption across 10 HR workflows: prompt design, measurement framework, post-launch iteration.",
       "Shipped Autocomplete feature reducing data entry errors through user feedback and dynamic field validation.",
-    ],
-  },
-  {
-    org: "Imperial College Business School",
-    role: "Full-time MBA",
-    dates: "September 2025 to September 2026",
-    bullets: [
-      "GTM consulting for a European green-tech scale-up: country prioritisation framework, EEA WISE database analysis.",
-      "President, LGBTQ+ and Allies Careers Club: corporate partnerships, speaker panels, mentoring programmes.",
-      "Panelist at Capco Trans Visibility event on lived experiences and inclusive workplace design.",
     ],
   },
   {
