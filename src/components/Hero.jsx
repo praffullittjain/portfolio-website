@@ -1,7 +1,7 @@
 const STATS = [
   "4 years at Oracle",
   "Imperial MBA 2026",
-  "Building in my own time",
+  "Shipping 2 products solo",
 ];
 
 export default function Hero() {
