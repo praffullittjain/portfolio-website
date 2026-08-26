@@ -1,8 +1,4 @@
-const STATS = [
-  "4 years at Oracle",
-  "Imperial MBA 2026",
-  "Shipping 2 products solo",
-];
+const STATS = ["4 years at Oracle", "Imperial MBA 2026"];
 
 export default function Hero() {
   return (

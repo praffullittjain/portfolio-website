@@ -36,21 +36,9 @@ export default function Navbar() {
           </ul>
           <a
             href="mailto:praffullitt.jain@gmail.com"
-            aria-label="Email Praffullitt Jain"
-            className="flex items-center justify-center w-9 h-9 rounded-lg border border-sage/30 text-sage hover:bg-sage hover:text-white transition-colors"
+            className="rounded-lg border border-sage px-4 py-2 text-sm font-semibold text-sage hover:bg-sage hover:text-white transition-colors"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-4.5 h-4.5"
-            >
-              <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
+            Email
           </a>
           <a
             href="/Praffullitt-Jain-Resume.pdf"
